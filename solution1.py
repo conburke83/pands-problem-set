@@ -8,7 +8,7 @@ i = int(input("Please enter a positive integer:  "))
 #Setting up the 'total' variable, which will track the output value in the while-loop
 total = 0
 #Setting up the while loop that will accumulate the 'total' to be output
-while i > 0
+while i>0:
     total = total + i
     i = i - 1
 #print the final output for the user to see
