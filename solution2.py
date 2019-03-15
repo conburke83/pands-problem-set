@@ -10,16 +10,21 @@
 #Importing the datetime and calendar modules
 from datetime import date
 import calendar
-my_date = date.today()
-calendar.day_name[my_date.weekday()]
-#Setting up a variable 't', which stores the value for today's string name
+#Setting up a variable 't', which stores the value for todays date
 t = date.today()
+#Setting up a variable 'tday', which stores the value for todays day
 tday = calendar.day_name[t.weekday()]
-#Setting up a variable 't-days' which stores a tuple of weekdays beginning with letter t
-tdays = {"Tuesday","Friday"}
-
+#Setting up a variable which always converts the tday string to all-lowercase, to avoid uppercase/lowercase ambigouity when looking up in the tupple
+tdaylower = tday.lower()
+#Setting up a variable 't-days' which stores a tuple of weekdays beginning with the letter 't'
+tdays = {"tuesday","thursday"}
+#Always print the following question first, to give context in the output
 print ("Does today's day begin with a 'T'?")
-if tday in tdays:
+#Lookup todays day, stored in varaiable 'tdaylower', in the tupple 'tdays'
+if tdaylower in tdays:
+    #If true (in the tupple), print this statement
     print ("Yes - today begins with a T.")
-Else: print ("No - today does not begin with a T")
+    #If false (not in the tupple), print this statement
+else:
+    print ("No - today does not begin with a T")
 
