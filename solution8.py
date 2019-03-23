@@ -4,6 +4,9 @@
 #Problem Set 8
 
 #Importing the datetime and calendar modules
-from datetime import datetime
+import datetime
+now = datetime.datetime.now().strftime("%A, %B %d %Y, %H:%M")
+print (now)
 
-print datetime.datetime()
+#Monday, January 10th 2019 at 1:15pm
+
