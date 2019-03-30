@@ -5,6 +5,10 @@
 #Output the date in the following format:
 #Monday, January 10th 2019 at 1:15pm
 
+#Reference https://stackoverflow.com/questions/5891555/display-the-date-like-may-5th-using-pythons-strftime
+#Reference https://stackoverflow.com/questions/19229190/convert-12-hour-into-24-hour-times
+#Reference https://docs.python.org/2/library/time.html
+
 #Importing the datetime type from the datetime module
 from datetime import datetime
 
