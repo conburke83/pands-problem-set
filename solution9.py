@@ -13,6 +13,13 @@ userfile = input("Please enter the name of a txt file: ")
 #Open the text file 'solution9_text in read mode and give it the object name 'f'.
 #Opening via a 'with' statement to perform actions on the file, and also to close the txt file automatically at the end of the 'with' statement
 with open(userfile,'r') as f:
-        lineslist = list(f)[1::2]
-        print (lineslist)
+    #Create a variable 'count' which will keep a count of the lin number incrementation, starting at zero
+    linenumber = 0
+    #Creating a loop for printing individual lines of the text file
+    for line in f:
+        #For each iteration of the loop increment the'linenumber' by 1
+        linenumber+=1
+        #Nested if-statement asking if the linenumber is now an odd number. If yes, print that line, if no return to the beginning of the loop
+        if linenumber % 2 == 0:
+            print(line)
 
